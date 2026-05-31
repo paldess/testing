@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/run_registr" method="POST">
+        <label>{{result}}</label>
+        <br>
+        <label for="username">Имя:</label>
+        <input type="email" id="username" name="email" placeholder="Введите ваше имя" >
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" >
+        <br>
+        <label for="password_2">Повторите пароль:</label>
+        <input type="password" id="password_2" name="password_2" placeholder="Повторите пароль" >
+        <br>
+        <button type='submit'>Регистрация</button>
+    </form>
+    <form action="/go_run_input" method="POST">
+        <button type='submit'>Войти</button>
+    </form>
+</body>
+</html>

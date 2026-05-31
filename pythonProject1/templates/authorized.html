@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Вы авторизованы, {{email}}!
+    <form action="/exit" method="POST">
+        <button type='submit'>Выход</button>
+    </form>
+        <br>
+    <form action="/page_group_1.html" method="POST">
+        <button type='submit'>Запрашиваемый ресурс №1</button>
+    </form>
+        <br>
+    <form action="/page_group_2.html" method="POST">
+        <button type='submit'>Запрашиваемый ресурс №2</button>
+    </form>
+        <br>
+    <form action="/page_group_3.html" method="POST">
+        <button type='submit'>Запрашиваемый ресурс №3</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="/update_users" method="POST">
+        <label>Изменить данные учетной записи</label><br>
+        <label>{{result}}</label>
+        <br>
+        <br>
+        <label for="email">Имя:</label>
+        <input type="email" id="email" name="email" placeholder="Введите новый email" >
+        <br>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите новый пароль" >
+        <br>
+        <br>
+        <button type='submit'>Изменить данные</button>
+    </form>
+        <br>
+    <form action="/drop_user" method="POST">
+        <button type='submit'>Удалить аккаунт</button>
+    </form>
+</body>
+</html>
